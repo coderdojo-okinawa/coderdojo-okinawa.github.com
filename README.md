@@ -7,11 +7,8 @@ This is the repository for managing CoderTokyo Okinawa's website.
 CoderDojo Okinawa is now preparing for the first Dojo in Okinawa. Here is the list of what we are considering to do:
 
 * Create game with [Scratch](http://scratch.mit.edu/)
-* Develop Android app with [App Inventor](http://appinventor.mit.edu/)
-* Create homepage with HTML&CSS;
+* Create homepage with HTML&CSS
 * Create browser game with Javascript(or CoffeeScript)
-* Projection mapping
-* Edit & Upload self created movies to YouTube
 
 CoderDojo Okinawa では現在，道場の設立準備を進めています．ここでは，次の内容を子供たちに教える予定です.
 
