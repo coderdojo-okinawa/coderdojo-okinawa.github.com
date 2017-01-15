@@ -85,6 +85,11 @@
 		margin: 0 0 20px 0;
 		text-transform: uppercase;
 	}
+
+	.doc-description a {
+		color: #141FE7;
+	}
+
 	.doc-description-frame {
 		border: 1px solid #EEE;
 		background-color: #FFFFBC;
