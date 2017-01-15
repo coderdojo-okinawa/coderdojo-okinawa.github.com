@@ -1,46 +1,213 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>CoderDojo Okinawa</title>
+	
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+    <meta name="description" content="CoderDojoは子どものためのプログラミング道場です。2011年にアイルランドで始まり、全国では67ヶ所、世界では66ヶ国・1,150ヶ所で開催されています。" />
+    <meta property="og:title" content="CoderDojo Okinawa">
+    <meta property="og:site_name" content="CoderDojo Okinawa">
+    <meta property="og:url" content="http://okinawa.coderdojo.jp/">
+    <meta property="og:image" content="http://okinawa.coderdojo.jp/og-image.png">
+    <meta property="og:image:type" content="image/png">
 
-    <title>CoderDojo Okinawa</title>
-    <meta name="keywords" content="CoderDojo, Okinawa, プログラミング, 道場" />
-    <meta name="description" content="CoderDojoは小中学生のためのプログラミング道場" />
-    <meta name="author" content="CoderDojo Okinawa" />
-    <meta name="copyright" content="&copy; 2012 - CoderDojo Okinawa" />
-    
-    <meta property="og:site_name" content="CoderDojo Okinawa"/>
-    <meta property="og:image" content="http://coderdojo-okinawa.github.com/style/images/dojo.png" />
-    
-    <link rel="template" href="style/template.html" />
-    <script src="js/jquery-1.7.1.min.js"></script>
-    <script src="js/yinyang.js"></script>
-  </head>
-  <body>
-    <p><img src="style/images/banner.jpg" /></p>
-    <!--
-    <h1>CoderDojo Okinawa</h1>
-    <p>CoderDojoは小中学生のためのプログラミング道場</p>
-    -->
-    <!--
-	<ul class="buttons">
-	  <li><a class="button github" href="https://github.com/coderdojo-okinawa">Find us on GitHub</a></li>
-	  <li><a class="button facebook" href="https://www.facebook.com/coderdojo.okinawa">Facebook</a></li>
-	</ul>
-	-->
-    <p><a href="https://www.facebook.com/coderdojo.okinawa"><img src="style/images/cover.png" /></a></p>
-    <p>CoderDojo Okinawa は現在、次の内容を子供たちに教えています.</p>
-    <ul>
-      <li>Scratchという開発ツールを使ったゲームを作る。</li>
-      <li>HTMLで自分専用のホームページを作る。</li>
-      <li>JavaScript(またはCoffeeScript)を使ってブラウザで動くゲームを作る。</li>
-    </ul>
-    <h2>About us</h2>
-    <ul>
-      <li><a href="https://www.facebook.com/coderdojo.okinawa">Facebook Page</a></li>
-      <li><a href="https://github.com/coderdojo-okinawa">GitHub Organization</a></li>
-      <li><a href="http://zen.coderdojo.com/dojo/165">CoderDojo.com</a></li>
-      <!--<li><a href="https://groups.google.com/forum/?fromgroups#!forum/coderdojo-okinawa">Google Groups</a></li>-->
-    </ul>
-  </body>
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/animate.css">
+	<link rel="stylesheet" media="all" type="text/css" href="style/fonts.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="style/general.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="style/main-top.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="style/smart-top.css" />
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+
+	<!-- for FB gadget. -->
+	<div id="fb-root"></div>
+
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8&appId=1292928177435206";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<!-- header section. -->
+	<section class="container-header">
+		<header class="wrapper">
+			<a href="#"><img class="logo" src="style/images-new/coderdojo-okinawa-logo_pc.png" alt=""/></a>
+			<nav>
+				<ul>
+					<li><a href="#about">CoderDojoとは</a></li>
+					<li><a href="#entry">参加しよう</a></li>
+					<li><a href="#joinus">メンターになろう</a></li>
+					<li><a href="https://www.facebook.com/coderdojo.okinawa/" target="_blank">Facebook</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="caption animated wow fadeInDown clearfix">
+			<h1>未来を創る力。</h1>
+			<p>子どものためのプログラミング道場　　</p>
+		</div>
+	</section>
+	
+	<!-- information section. -->
+	<section class="information">
+		<div class="wrapper">
+			<div class="title animated wow fadeIn">
+				<h2>お知らせ</h2>
+				<h3>CoderDojo Okinawaからのお知らせ</h3>
+			</div>
+
+			<ul class="clearfix">
+				<li class="animated wow fadeInDown" data-wow-delay=".2s">
+					<div class="media">
+						<div class="date">
+							<span class="day">5</span>
+							<span class="month">Feb</span>
+						</div>
+						<a href="docs/20170108.html">
+							<img src="style/images-new/information-20170108.jpg" alt=""/>
+						</a>
+					</div>
+					<a href="#">
+						<h1>第1回目開催日は2017年1月28日（土）に決定しました!!</h1>
+					</a>
+				</li>
+
+				<li class="animated wow fadeInDown" data-wow-delay=".4s">
+					<div class="media">
+						<div class="date">
+							<span class="day">23</span>
+							<span class="month">Dec</span>
+						</div>
+						<a href="docs/20161223.html">
+							<img src="style/images-new/information-20161223.jpg" alt=""/>
+						</a>
+					</div>
+					<a href="#">
+						<h1>ネット環境がようやく整い、いよいよDojo開始に向けて本格的な準備に!!</h1>
+					</a>
+				</li>
+
+				<li class="animated wow fadeInDown" data-wow-delay=".6s">
+					<div class="media">
+						<div class="date">
+							<span class="day">7</span>
+							<span class="month">Dec</span>
+						</div>
+						<a href="docs/20161207.html">
+							<img src="style/images-new/information-20161207.jpg" alt=""/>
+						</a>
+					</div>
+					<a href="#"><h1>CoderDojo Okinawaリブートに向けたキックオフ!!</h1>
+				</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- about section. -->
+	<section class="about wrapper">
+		<a name="about"></a>
+			<div class="title animated wow fadeIn">
+				<h2>CoderDojoとは</h2>
+				<h3>- 自分で学ぶ、プログラミング道場 -</h3>
+				<p class="description">
+				CoderDojoは、2011年にアイルランドから広がった世界では66カ国、1,150の道場が存在する世界規模の子供向けプログラミングコミュニティです。日本にも67以上の道場が活動しています。（道場数は2016年12月現在のもの）
+				道場よって異なりますが、主に対象としているのは7〜17歳の子ども達で、子供でも簡単にプログラミングができるScratch (スクラッチ）や、Minecraft、電子工作など、子供たちの創造力を刺激する様々なテーマを取り扱い、子ども、サポートする大人も共に学ぶ場を提供しています。
+				CoderDojoの全体像をもっと詳しく知りたい方は、CoderDojo JapanのWebサイトをご覧下さい。（<a href="http://www.coderdojo.jp/" target="_blank">CoderDojo Japan</a>）
+				</p>
+			</div>
+
+		<ul class="clearfix">
+			<li class="animated wow fadeInDown">
+				<img class="icon" src="style/images-new/icon1.png" alt=""/>
+				<h2>自発的に活動する場所です</h2>
+				<p>CoderDojoは誰かが何かを一方的に教えてくれる「教室」ではありません。参加する皆さんが自ら学び、共に教え合う場です。</p>
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".2s">
+				<img class="icon" src="style/images-new/icon2.png" alt=""/>
+				<h2>メンターが一緒になって考えます</h2>
+				<p>何か分からないことや、サポートが必要な場合はメンターが一緒になって実現方法を考えます。</p>
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".4s">
+				<img class="icon" src="style/images-new/icon3.png" alt=""/>
+				<h2>世界に発表することができます</h2>
+				<p>世界66カ国に1,150のDojoがあります。Dojo同士交流があったり、世界中のDojoがインターネット上で交流し合う場もあります。作った成果を世界に向けて発表しましょう。</p>
+			</li>
+		</ul>
+	</section>
+
+	<!-- video section. -->
+	<section class="video">
+		<img src="style/images-new/video_logo.png" alt="" class="video_logo animated wow fadeInDown"/>
+		<h3 class="animated wow fadeInDown">CoderDojo Okinawa</h3>
+<!--		<a href="http://www.coderdojo.jp/" id="play_btn" class="fancybox animated wow flipInX" data-wow-duration="2s"></a>-->
+	</section>
+
+	<!-- lets join us section. -->
+	<section class="contents wrapper">
+		<a name="entry"></a>
+		<div class="title animated wow fadeIn">
+			<h2>参加しよう</h2>
+			<p class="description">
+			7才から17才までの子供は誰でも参加することができます。参加は無料です。「自分でゲームを作ってみたい」「Webサイトを作ってみたい」といった具体的な目的から「何かもの作りをやってみたい」「プログラミングって何かおもしろそう」といった漠然とした想いまで、参加動機はそれぞれで構いません。仲間たちと一緒に、何か作ってみましょう!!
+			</p>
+			<div>
+				<img src="style/images-new/dojo-image.jpg" alt="Dojo Okinawaイメージです"/>
+			</div>
+		</div>
+	</section>
+
+	<!-- lets join us section. -->
+	<section class="contents wrapper">
+		<a name="joinus"></a>
+		<div class="title animated wow fadeIn">
+			<h2>メンターになろう</h2>
+			<p class="description">
+			子どもたちの真剣なまなざし、わくわくした笑顔に、私たちもパワーをもらっています。メンターに必要なのは、子どもたちと一緒に成長する意欲。プログラミングのスキルは必須ではありません。あなたも一緒に子どもたちと楽しみませんか？興味のある方は、Facebookページからメッセージでお気軽に問合わせ下さい。</p>
+		</div>
+		<div class="title animated wow fadeIn">
+		<div class="fb-page" data-href="https://www.facebook.com/coderdojo.okinawa/" data-tabs="timeline" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/coderdojo.okinawa/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/coderdojo.okinawa/">CoderDojo Okinawa</a></blockquote></div>		</div>
+	</section>
+
+	<!-- supporters section. -->
+	<section class="contents wrapper">
+		<div class="title animated wow fadeIn">
+			<h2>サポーター企業</h2>
+		<div class="title animated wow fadeIn">
+			<a href="http://artisan.jp.net/" target="_blank"><img src="style/images-new/bn-artisan.png" alt="アーティサン株式会社"/></a>&nbsp;&nbsp;&nbsp;
+			<a href="https://www.facebook.com/kanaikeiei/" target="_blank"><img src="style/images-new/bn-kanai.png" alt="カナイ経営支援研究所"</a>&nbsp;&nbsp;&nbsp;<a href="http://tsukurukids.com/" target="_blank"><img src="style/images-new/bn-tsukuru.png" alt="小学生から学ぶプログラミングスクール" /></a>&nbsp;&nbsp;&nbsp;
+		</div>
+		</div>
+	</section>
+
+	<!-- footer. -->
+	<footer>
+		<div class="wrapper">
+			<div class="rights">
+				<img src="style/images-new/footer_logo.png" alt="" class="footer_logo"/>
+				<p>© CoderDojo Okinawa. All Rights Reserved 2017</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#about">CoderDojoとは</a></li>
+					<li><a href="#entry">参加しよう</a></li>
+					<li><a href="#joinus">メンターになろう</a></li>
+					<li><a href="https://www.facebook.com/coderdojo.okinawa/" target="_blank">Facebook</a></li>
+				</ul>
+			</nav>
+		</div>		
+	</footer>
+</body>
 </html>
