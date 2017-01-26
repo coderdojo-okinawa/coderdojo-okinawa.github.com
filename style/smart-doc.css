@@ -80,7 +80,7 @@
 		line-height: 20px;
 		color: #616161;
 		font-size: 14px;
-		margin: 5px;
+		margin: 10px 5px;
 		text-transform: uppercase;
 	}
 
@@ -109,6 +109,9 @@
 		text-align: center;
 		margin-top: 20px;
 		margin-bottom: 20px;
+	}
+	.doc-map {
+
 	}
 	
 	/*    footer    */
